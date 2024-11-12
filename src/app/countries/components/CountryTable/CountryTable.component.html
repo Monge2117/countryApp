@@ -24,7 +24,7 @@ No hay paises que mostrar
     <th>{{item.name.common}}</th>
     <th>{{item.capital}}</th>
     <th>{{item.population |number}}</th>
-    <th><a href="#">Ver mas</a></th>
+    <th><a [routerLink]="['/countries/by/',item.cca3]">info</a></th>
   </tr>
 </tbody>
 </table>
